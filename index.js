@@ -19,6 +19,6 @@ const PORT = process.env.PORT || 3000;
 
 app.get('/student', rescue(getStudents));
 
-app.use(errorMiddleware); 
+app.use(errorMiddleware);
 
 app.listen(PORT, () => console.log(`Executando na porta: ${PORT}`));
